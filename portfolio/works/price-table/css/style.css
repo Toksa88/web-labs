@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px 20px;
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #2b2b2b;
+    background-color: #fff;
+}
+
+/* Таблиця */
+
+.price-table {
+    width: 100%;
+    max-width: 860px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden; /* обрізає кути комірок по border-radius таблиці */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+    font-size: 15px;
+}
+
+/* Заголовок таблиці */
+
+.price-table th {
+    padding: 22px 12px;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+}
+
+.plan-choose {
+    width: 245px;
+    font-size: 16px;
+    background-color: #9e98c2;
+}
+
+.plan-starter {
+    background-color: #847db4;
+}
+
+.plan-econom {
+    background-color: #6a61a3;
+}
+
+.plan-standart {
+    background-color: #4f4592;
+}
+
+.plan-professional {
+    background-color: #3d3384;
+}
+
+.plan span {
+    display: block;
+}
+
+.plan-name {
+    font-size: 16px;
+}
+
+.plan-price {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+.plan-period {
+    font-size: 16px;
+}
+
+/* Тіло таблиці: смуги рядків + світліші 2-й та 4-й стовпці */
+
+.price-table td {
+    height: 50px;
+    padding: 0 15px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.price-table td:first-child {
+    text-align: left;
+}
+
+.price-table tbody tr:nth-child(odd) td {
+    background-color: #f2f2f2;
+}
+
+.price-table tbody tr:nth-child(even) td {
+    background-color: #e6e6e6;
+}
+
+.price-table tbody tr:nth-child(odd) td:nth-child(2),
+.price-table tbody tr:nth-child(odd) td:nth-child(4) {
+    background-color: #fff;
+}
+
+.price-table tbody tr:nth-child(even) td:nth-child(2),
+.price-table tbody tr:nth-child(even) td:nth-child(4) {
+    background-color: #f2f2f2;
+}
+
+.price-table tbody tr:hover td {
+    background-color: #dcd9ee;
+}
+
+.row-accent td {
+    color: #3d3384;
+    font-weight: 600;
+}
+
+/* Нижній рядок з кнопками */
+
+.price-table tfoot td {
+    height: 86px;
+    border-bottom: none;
+    background-color: #f2f2f2;
+}
+
+.price-table tfoot td:nth-child(2),
+.price-table tfoot td:nth-child(4) {
+    background-color: #fff;
+}
+
+.btn {
+    display: inline-block;
+    width: 103px;
+    padding: 10px 0;
+    color: #2b2b2b;
+    font-size: 13px;
+    text-decoration: none;
+    background-color: #f0f0f0;
+    border: 1px solid #c4c4c4;
+    border-radius: 4px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: #3d3384;
+    border-color: #3d3384;
+}

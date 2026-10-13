@@ -1,0 +1,120 @@
+/* Сторінка price.html — таблиця з лабораторної роботи №2 */
+
+.price {
+    padding: 50px 20px 40px;
+}
+
+.price-header {
+    margin: 0 0 40px;
+    font-weight: 800;
+    font-size: 36px;
+    text-align: center;
+    color: #18191F;
+}
+
+.price-table {
+    width: 750px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #18191F;
+}
+
+.price-table th {
+    padding: 22px 12px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.plan span {
+    display: block;
+    line-height: 34px;
+}
+
+.plan-choose {
+    width: 190px;
+    background-color: #9e98c2;
+}
+
+.plan-starter {
+    background-color: #847db4;
+}
+
+.plan-econom {
+    background-color: #6a61a3;
+}
+
+.plan-standart {
+    background-color: #4f4592;
+}
+
+.plan-professional {
+    background-color: #3d3384;
+}
+
+.price-table td {
+    height: 38px;
+    padding: 4px 10px;
+    text-align: center;
+    background-color: #e8e6e8;
+}
+
+.price-table td:first-child {
+    text-align: left;
+}
+
+.price-table tbody tr:nth-child(even) td {
+    background-color: #dfdddf;
+}
+
+.price-table tbody tr:nth-child(odd) td:nth-child(2),
+.price-table tbody tr:nth-child(odd) td:nth-child(4),
+.price-table tfoot td:nth-child(2),
+.price-table tfoot td:nth-child(4) {
+    background-color: #fff;
+}
+
+.price-table tbody tr:hover td {
+    background-color: #d6d2ec;
+}
+
+.row-accent td {
+    color: #3d3384;
+    font-weight: bold;
+}
+
+.price-table tfoot td {
+    height: 78px;
+}
+
+.btn {
+    display: inline-block;
+    width: 100px;
+    padding: 9px 0;
+    color: #18191F;
+    font-size: 14px;
+    text-decoration: none;
+    background-color: #e8e6e8;
+    border: 2px solid #c8c6c8;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: #8C30F5;
+    border-color: #8C30F5;
+}
+
+/* сторінка вища за екран — не даємо flex стиснути шапку і футер */
+.header,
+.footer {
+    flex-shrink: 0;
+}
+
+.nav-link-active {
+    color: #8C30F5;
+}

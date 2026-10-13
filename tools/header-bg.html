@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!-- Генератор фону шапки портфоліо: node tools/shot.mjs tools/header-bg.html portfolio/img/header/header-bg.jpg 1920 1080 -->
+<style>
+    body {
+        margin: 0;
+        height: 1080px;
+        overflow: hidden;
+        background: radial-gradient(circle at 70% 30%, #34507a 0%, #1b2a41 55%, #111a2a 100%);
+        font: 22px/1.65 Consolas, 'Courier New', monospace;
+    }
+    .editor {
+        position: absolute;
+        left: 140px;
+        top: 110px;
+        width: 1500px;
+        height: 860px;
+        background: #1e1f29;
+        border-radius: 18px;
+        box-shadow: 0 40px 120px rgba(0, 0, 0, .6);
+        transform: perspective(1800px) rotateY(-9deg) rotateX(4deg);
+        overflow: hidden;
+    }
+    .bar { height: 46px; background: #2a2c39; display: flex; gap: 12px; align-items: center; padding-left: 22px; }
+    .bar i { width: 14px; height: 14px; border-radius: 50%; display: block; }
+    .side { position: absolute; top: 46px; bottom: 0; width: 260px; background: #23242f; color: #7c8296; padding: 20px; font-size: 18px; }
+    pre { margin: 0; position: absolute; left: 300px; top: 70px; color: #c8d3f5; }
+    .n { color: #4b5068; display: inline-block; width: 46px; }
+    .t { color: #ff79c6; } .a { color: #50fa7b; } .s { color: #f1fa8c; } .c { color: #6272a4; } .p { color: #8be9fd; }
+    .plant {
+        position: absolute; right: 60px; bottom: -40px; width: 340px; height: 420px;
+        background: radial-gradient(ellipse at 50% 100%, #d9a63b 0 35%, transparent 36%),
+                    radial-gradient(ellipse at 40% 40%, #3f7d4e 0 30%, transparent 31%),
+                    radial-gradient(ellipse at 65% 30%, #2f6b40 0 28%, transparent 29%);
+        filter: blur(6px); opacity: .8;
+    }
+</style>
+</head>
+<body>
+<div class="editor">
+    <div class="bar"><i style="background:#ff5f56"></i><i style="background:#ffbd2e"></i><i style="background:#27c93f"></i></div>
+    <div class="side">portfolio<br>&nbsp;├ css<br>&nbsp;│ ├ style.css<br>&nbsp;│ └ media.css<br>&nbsp;├ scss<br>&nbsp;├ img<br>&nbsp;├ works<br>&nbsp;└ index.html</div>
+<pre><span class="n">1</span><span class="c">&lt;!-- Сайт портфоліо --&gt;</span>
+<span class="n">2</span><span class="t">&lt;header</span> <span class="a">class</span>=<span class="s">"header"</span><span class="t">&gt;</span>
+<span class="n">3</span>    <span class="t">&lt;h1</span> <span class="a">class</span>=<span class="s">"header-title"</span><span class="t">&gt;</span>Веб-портфоліо<span class="t">&lt;/h1&gt;</span>
+<span class="n">4</span>    <span class="t">&lt;p</span> <span class="a">class</span>=<span class="s">"header-subtitle"</span><span class="t">&gt;</span>Веб-розробник<span class="t">&lt;/p&gt;</span>
+<span class="n">5</span><span class="t">&lt;/header&gt;</span>
+<span class="n">6</span>
+<span class="n">7</span><span class="p">.portfolio-cards-wrapper</span> {
+<span class="n">8</span>    <span class="a">display</span>: <span class="s">flex</span>;
+<span class="n">9</span>    <span class="a">flex-wrap</span>: <span class="s">wrap</span>;
+<span class="n">10</span>    <span class="a">justify-content</span>: <span class="s">space-between</span>;
+<span class="n">11</span>}
+<span class="n">12</span>
+<span class="n">13</span><span class="t">@media</span> (<span class="a">max-width</span>: <span class="s">760px</span>) {
+<span class="n">14</span>    <span class="p">.card</span> { <span class="a">width</span>: <span class="s">100%</span>; }
+<span class="n">15</span>}
+<span class="n">16</span>
+<span class="n">17</span><span class="t">$primary</span>: <span class="s">#1e4767</span>;
+<span class="n">18</span><span class="t">@mixin</span> <span class="p">button</span>(<span class="t">$color</span>) {
+<span class="n">19</span>    <span class="a">border</span>: <span class="s">3px solid</span> <span class="t">$color</span>;
+<span class="n">20</span>}</pre>
+</div>
+<div class="plant"></div>
+</body>
+</html>

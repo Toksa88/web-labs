@@ -1,0 +1,128 @@
+@media (max-width: 1140px) { /*для екранів з шириною до 1140px*/
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .header-title {
+        font-size: 46px;
+    }
+
+    .card {
+        width: calc(50% - 15px);
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+    .footer {
+        padding-bottom: 60px;
+    }
+
+    .footer-row {
+        flex-wrap: wrap;
+    }
+
+    .footer-col {
+        min-width: 0;
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    .footer-contacts {
+        width: 100%;
+        text-align: center;
+    }
+
+    .project-img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 760px) { /* Для екранів з шириною до 760px*/
+    .header-title {
+        font-size: 34px;
+        text-align: center;
+    }
+
+    .header-subtitle {
+        padding: 0 20px;
+        font-size: 12px;
+        letter-spacing: 0.1em;
+    }
+
+    .portfolio {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+
+    .portfolio-header {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    /* картки тепер в одну колонку — відступ потрібен і передостанній */
+    .card:nth-last-child(2) {
+        margin-bottom: 30px;
+    }
+
+    .card:hover {
+        transform: none;
+    }
+
+    .footer {
+        padding-top: 35px;
+        padding-bottom: 40px;
+        text-align: center;
+    }
+
+    .footer-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-col {
+        width: 100%;
+    }
+
+    .footer-copyright-name {
+        font-size: 24px;
+    }
+
+    .footer-button {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 14px;
+        padding-top: 13px;
+    }
+
+    .project {
+        padding: 50px 0 70px;
+    }
+
+    .project-header {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .project-img {
+        margin-bottom: 40px;
+    }
+
+    .project-description {
+        margin-bottom: 40px;
+        text-align: left;
+    }
+
+    .project-back-btn {
+        font-size: 14px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 13px;
+    }
+}

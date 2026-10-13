@@ -1,0 +1,17 @@
+{
+  "name": "web-labs",
+  "version": "1.0.0",
+  "description": "Лабораторні роботи з дисципліни «Створення WEB-сайтів»",
+  "scripts": {
+    "sass": "sass --no-source-map --style=expanded portfolio/scss/style.scss portfolio/css/style.css",
+    "sass:watch": "sass --watch --no-source-map portfolio/scss/style.scss portfolio/css/style.css",
+    "shot": "node tools/shot.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "sass": "^1.105.1"
+  }
+}
